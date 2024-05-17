@@ -1,7 +1,8 @@
 export const NotFound = () => {
     return (
         <div className="">
-            {/* Aqui ficará a mensagem de erro */}
+            <h1>404 - Página Não Encontrada</h1>
+            <p>Desculpe, a página que você está procurando não existe.</p>
         </div>
-      )
+    )
 }
