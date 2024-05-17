@@ -1,6 +1,6 @@
 export const NotFound = () => {
     return (
-        <div className="bg-sky-600 text-white">
+        <div className="">
             {/* Aqui ficará a mensagem de erro */}
         </div>
       )
