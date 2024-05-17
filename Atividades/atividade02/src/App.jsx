@@ -7,14 +7,16 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Cursos } from './pages/Cursos';
 import { Aulas } from './pages/Aulas';
 import { Footer } from './components/Footer';
-// import { bg } from '../src/assets/bg.jpeg'
-//Teste
+import { useContext } from 'react';
+import { ThemeContext } from './context/ThemeContext';
 
 
 function App() {
 
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className='text-white bg-[#1C1A1D] font-[Poppins]'>
+    <div className={` font-[Poppins] ${theme === "ligth" ? "bg-[#f4f4f5] text-black" : "text-white"}`}>
       <Nav />
 
       <main className='max-w-[1920px] mx-auto'>
@@ -29,7 +31,7 @@ function App() {
 
       </main>
 
-      <Footer/>
+      <Footer />
 
     </div>
   )
